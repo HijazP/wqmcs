@@ -1,0 +1,8 @@
+node_modules
+vendor
+composer.lock
+Dockerfile
+docker-compose
+.env.example
+.gitignore
+README.md

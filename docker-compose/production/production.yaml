@@ -1,0 +1,17 @@
+services:
+  app:
+    build:
+      context: ./
+      dockerfile: ./docker-compose/production/production.Dockerfile
+    image: wqmcs:prod
+    pull_policy: build
+    container_name: wqmcs-app-prod
+    restart: always
+
+  db:
+    restart: always
+
+  web-server:
+    restart: always
+    ports:
+      - 8080:80

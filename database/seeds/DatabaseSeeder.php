@@ -56,11 +56,11 @@ class DatabaseSeeder extends Seeder
             }
         }
 
-        $this->call([
-            EdgeSeeder::class,
-            IotNodeSeeder::class,
-            TresholdSeeder::class,
-        ]);
+        // $this->call([
+        //     EdgeSeeder::class,
+        //     IotNodeSeeder::class,
+        //     TresholdSeeder::class,
+        // ]);
     }
 
     public function getRegions () {

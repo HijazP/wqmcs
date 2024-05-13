@@ -1,0 +1,13 @@
+services:
+  app:
+    image: wqmcs-app:dev
+    container_name: wqmcs-app-dev
+    volumes:
+      - ./:/var/www
+
+  web-server:
+    ports:
+      - 8080:80
+    volumes:
+      - ./:/var/www
+    
