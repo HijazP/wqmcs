@@ -29,9 +29,7 @@ services:
   web-server:
     image: nginx:stable-alpine-slim
     container_name: wqmcs-web-server
-    restart: unless-stopped 
-    volumes:
-      - ./docker-compose/nginx:/etc/nginx/conf.d/
+    restart: unless-stopped
     networks:
       - wqmcs-network
     depends_on:

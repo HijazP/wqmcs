@@ -13,5 +13,7 @@ services:
 
   web-server:
     restart: always
+    volumes:
+      - ./docker-compose/nginx/production:/etc/nginx/conf.d/
     ports:
       - 8080:80

@@ -12,7 +12,7 @@ WORKDIR /var/www
 COPY . .
 
 RUN chmod -R 777 /var/www/storage
-# RUN composer install
-# RUN npm install
-# RUN npm run production
-# RUN php artisan key:generate
+RUN composer install
+RUN npm install
+RUN npm run production
+RUN php artisan key:generate
